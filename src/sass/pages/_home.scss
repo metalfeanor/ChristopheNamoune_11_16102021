@@ -1,0 +1,17 @@
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeContainer {
+  padding: 40px 100px 0 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeImg {
+  width: 100%;
+  border-radius: 25px;
+  background-size: cover;
+}

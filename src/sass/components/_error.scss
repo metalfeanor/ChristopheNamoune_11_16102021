@@ -1,0 +1,49 @@
+.errorWrapper {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  //background-color: ${colors.backgroundLight};
+  align-items: center;
+}
+
+.errorTitle {
+  color: $color-primary;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 142.6%;
+  @media (min-width: 376px) {
+    font-weight: 700;
+    font-size: 288px;
+  }
+}
+
+.errorSubtitle {
+  color: $color-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  @media (min-width: 376px) {
+    font-weight: 500;
+    font-size: 36px;
+  }
+}
+
+.errorlink {
+  margin-top: 133px;
+  padding: 10px 15px;
+  color: $color-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  @media (min-width: 376px) {
+    margin-top: 182px;
+    font-size: 18px;
+  }
+  &:hover {
+    color: white;
+    background-color: $color-primary;
+    border-radius: 10px;
+  }
+}
