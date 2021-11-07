@@ -1,6 +1,6 @@
 # OPENCLASSROOMS PROJECT 11 KASA
 
-A React app for flat renting creating wit Create React App
+A React app for flat renting creating with Create React App
 
 ## For developers
 
