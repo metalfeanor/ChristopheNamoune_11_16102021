@@ -1,17 +1,39 @@
 .aboutWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
 }
 
 .aboutContainer {
-  padding: 40px 100px 0 100px;
   display: flex;
-  flex-direction: column;
+  margin: 17px 20px 19px 20px;
+  background-image: url("../../assets/about_background.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  height: 111px;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  @media (min-width: $min-width) {
+    margin: 40px 20px 30px 20px;
+    border-radius: 25px;
+    height: 223px;
+  }
+  @media (min-width: 1240px) {
+    margin: 63px 0 38px 0;
+  }
 }
 
-.aboutImg {
-  width: 100%;
-  border-radius: 25px;
-  background-size: cover;
+.aboutDropdown {
+  padding: 0 20px;
+  @media (min-width: 1240px) {
+    padding: 0;
+  }
 }

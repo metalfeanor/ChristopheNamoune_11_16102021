@@ -1,0 +1,13 @@
+@mixin carrouselBtn {
+  position: absolute;
+  height: 255px;
+  width: 50px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  @media (min-width: $min-width) {
+    height: 415px;
+  }
+}

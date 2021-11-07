@@ -1,0 +1,57 @@
+.btnLeft {
+  @include carrouselBtn;
+  left: 0;
+}
+.btnRight {
+  @include carrouselBtn;
+  right: 0;
+}
+.chevronLeft {
+  position: absolute;
+  transform: translateY(-50%) rotate(-90deg);
+  left: 0;
+  height: 20px;
+  width: 12px;
+  @media (min-width: $min-width) {
+    height: 79px;
+    width: 47px;
+  }
+}
+
+.chevronRight {
+  position: absolute;
+  transform: translateY(-50%) rotate(90deg);
+  right: 0;
+  height: 20px;
+  width: 12px;
+  @media (min-width: $min-width) {
+    height: 79px;
+    width: 47px;
+  }
+}
+
+.imgCount {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  color: white;
+  //user-select: none;
+  //pointer-events: none;
+}
+
+.carrousel {
+  position: relative;
+  margin: 20px 20px 15px 20px;
+  @media (min-width: 1240px) {
+    margin: 20px 0 30px 0;
+  }
+  & img {
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+    @media (min-width: $min-width) {
+      height: 415px;
+      border-radius: 25px;
+    }
+  }
+}

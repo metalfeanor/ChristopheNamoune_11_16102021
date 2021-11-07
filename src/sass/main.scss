@@ -7,6 +7,12 @@
 /*@import "./base/typography";*/
 
 @import "./components/error";
+@import "./components/tag";
+@import "./components/thumb";
+@import "./components/dropdown";
+@import "./components/rating";
+@import "./components/host";
+@import "./components/carrousel";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -15,4 +21,4 @@
 
 @import "./pages/home";
 @import "./pages/about";
-@import "./pages/logement";
+@import "./pages/location";

@@ -1,13 +1,19 @@
 import { Component } from "react";
-import Image from "../../assets/about_background.png";
+import { about } from "../../data";
+import Dropdown from "../../components/Dropdown";
 
 class About extends Component {
   render() {
     return (
       <div className="aboutWrapper">
-        <div className="aboutContainer">
-          <img src={Image} alt="rock-montains" className="aboutImg" />
-        </div>
+        <main>
+          <div className="aboutContainer"></div>
+          <div className="aboutDropdown">
+            {about.map((item) => (
+              <Dropdown key={item.id} title={item.title} content={item.content} />
+            ))}
+          </div>
+        </main>
       </div>
     );
   }

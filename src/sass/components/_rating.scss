@@ -1,0 +1,15 @@
+.star {
+  width: 15px;
+  height: 15px;
+  @media (min-width: $min-width) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.rating {
+  order: 1;
+  @media (min-width: $min-width) {
+    order: 2;
+  }
+}

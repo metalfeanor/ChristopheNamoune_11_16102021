@@ -1,0 +1,64 @@
+.locationWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 20px;
+  @media (min-width: 1240px) {
+    margin: 0;
+  }
+  & h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: $color-primary;
+  }
+  & h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: $color-primary;
+  }
+  & .tag {
+    margin: 10px 10px 10px 0;
+  }
+}
+
+.locationHeader {
+  @media (min-width: $min-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.topHeader {
+  flex-grow: 1;
+  @media (min-width: 720px) {
+  }
+}
+
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-bottom: 17px;
+  @media (min-width: $min-width) {
+    flex-direction: column;
+    row-gap: 18px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  column-gap: 5%;
+  width: 100%;
+  @media (min-width: $min-width) {
+    flex-direction: row;
+  }
+}

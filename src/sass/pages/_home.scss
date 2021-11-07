@@ -5,13 +5,66 @@
 }
 
 .homeContainer {
-  padding: 40px 100px 0 100px;
+  margin: 17px 20px 0 20px;
   display: flex;
   flex-direction: column;
+  background-image: url("../../assets/background.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  height: 111px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  @media (min-width: $min-width) {
+    margin: 40px 20px 0 20px;
+    border-radius: 25px;
+    align-items: center;
+    height: 223px;
+    padding-left: 0px;
+  }
+  @media (min-width: 1240px) {
+    margin: 63px 0 0 0;
+  }
 }
 
-.homeImg {
-  width: 100%;
-  border-radius: 25px;
-  background-size: cover;
+.homeText {
+  z-index: 1;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  padding-left: 16px;
+  @media (min-width: $min-width) {
+    font-size: 48px;
+  }
+}
+
+.homeContent {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding-top: 22px;
+  background-color: $color-dropBackground;
+  @media (min-width: $min-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0;
+    padding: 40px 20px 0 20px;
+  }
+  @media (min-width: $tablet-witdh) {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 43px 0;
+    gap: 50px 60px;
+    padding: 56px 50px 0 50px;
+  }
 }

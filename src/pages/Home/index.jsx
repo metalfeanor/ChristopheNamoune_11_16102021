@@ -1,14 +1,20 @@
 import { Component } from "react";
-import Image from "../../assets/background.png";
+import { data } from "../../data";
+import Thumb from "../../components/Thumb";
 
 class Home extends Component {
   render() {
     return (
-      <div className="homeWrapper">
+      <main className="homeWrapper">
         <div className="homeContainer">
-          <img src={Image} alt="rock-montains" className="homeImg" />
+          <div className="homeText">Chez vous, partout et ailleurs</div>
         </div>
-      </div>
+        <div className="homeContent">
+          {data.map((elt) => (
+            <Thumb title={elt.title} src={elt.cover} id={elt.id} key={elt.id} />
+          ))}
+        </div>
+      </main>
     );
   }
 }

@@ -1,0 +1,31 @@
+.host {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  order: 2;
+  @media (min-width: $min-width) {
+    order: 1;
+  }
+  & h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 142.6%;
+    color: $color-primary;
+    text-align: end;
+    width: 38px;
+    @media (min-width: $min-width) {
+      font-size: 18px;
+      width: 58px;
+    }
+  }
+  & img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    @media (min-width: $min-width) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+}

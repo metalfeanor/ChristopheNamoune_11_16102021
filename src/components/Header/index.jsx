@@ -5,19 +5,19 @@ import { ReactComponent as Logo } from "../../assets/logo.svg";
 class Header extends Component {
   render() {
     return (
-      <nav className="headerNav">
+      <header className="headerNav">
         <Link to="/">
           <Logo fill="#FF6060" className="headerLogo" />
         </Link>
-        <div>
-          <Link className="link" to="/">
+        <nav>
+          <Link className="link right" to="/">
             Accueil
           </Link>
           <Link className="link" to="/about">
             A Propos
           </Link>
-        </div>
-      </nav>
+        </nav>
+      </header>
     );
   }
 }

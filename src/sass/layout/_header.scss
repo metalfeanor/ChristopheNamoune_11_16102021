@@ -1,16 +1,22 @@
 .headerNav {
-  padding: 20px 20px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (min-width: 376px) {
-    padding: 40px 100px 0 100px;
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  @media (min-width: $min-width) {
+    padding: 40px 20px 0 20px;
+  }
+  @media (min-width: 1240px) {
+    padding: 40px 0 0 0;
   }
 }
 
 .headerLogo {
   height: 47px;
-  @media (min-width: 376px) {
-    font-size: 68px;
+  width: 145px;
+  @media (min-width: $min-width) {
+    height: 68px;
+    width: 210.32px;
   }
 }

@@ -1,0 +1,73 @@
+.dropWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  width: 100%;
+  min-width: calc(50% - 30px);
+  @media (min-width: $min-width) {
+    max-width: 1023px;
+  }
+  & h3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: #ff6060;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0 11.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $min-width) {
+      max-width: 1023px;
+      font-size: 24px;
+      padding: 0 15px;
+    }
+  }
+  & button {
+    border: none;
+    height: 30px;
+    @media (min-width: $min-width) {
+      height: 47px;
+    }
+  }
+}
+
+.chevron {
+  height: 15.2px;
+  width: 8.98px;
+  @media (min-width: $min-width) {
+    width: 14px;
+    height: 24px;
+  }
+}
+
+.down {
+  transform: rotate(180deg);
+}
+
+.dropContent,
+.dropList {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 142.6%;
+  color: $color-primary;
+  background: $color-dropBackground;
+  border-radius: 5px;
+  padding: 23px 7px 50px 12px;
+  @media (min-width: $min-width) {
+    max-width: 1023px;
+    padding: 27px 27px 19px 18px;
+    font-size: 24px;
+  }
+}
+.dropList {
+  list-style: none;
+}
+
+.close {
+  display: none;
+}
