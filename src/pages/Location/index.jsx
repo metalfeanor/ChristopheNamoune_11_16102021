@@ -5,11 +5,16 @@ import Rating from "../../components/Rating";
 import Host from "../../components/Host";
 import Dropdown from "../../components/Dropdown";
 import Carrousel from "../../components/Carrousel";
+import { Redirect } from "react-router";
 
 class Location extends Component {
   render() {
     const id = this.props.match.params.id;
-    const { title, location, pictures, host, equipments, tags, rating, description } = data.filter((item) => item.id === id)[0];
+    const locationObject = data.filter((item) => item.id === id)[0];
+    if (!locationObject) {
+      return <Redirect to="/404" />;
+    }
+    const { title, location, pictures, host, equipments, tags, rating, description } = locationObject || {};
     //console.log(title, location, pictures, host, equipments, tags, rating, description);
     return (
       <main>

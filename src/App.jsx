@@ -22,7 +22,7 @@ class App extends Component {
               <About />
             </Route>
             <Route path="/location/:id" component={LocationInfo}></Route>
-            <Route>
+            <Route exact path="*">
               <Error />
             </Route>
           </Switch>
