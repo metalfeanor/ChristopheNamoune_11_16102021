@@ -5,7 +5,7 @@ import { ReactComponent as ChevronUp } from "../../assets/chevron.svg";
 class Dropdown extends Component {
   constructor(props) {
     super(props);
-    this.state = { isOpen: true };
+    this.state = { isOpen: false };
     this.toggleBtn = () => {
       this.setState((state) => ({
         isOpen: state.isOpen ? false : true,
