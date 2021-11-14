@@ -40,7 +40,7 @@ class Dropdown extends Component {
 
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([PropTypes.array, PropTypes.string]).isRequired,
 };
 
 export default Dropdown;
